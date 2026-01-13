@@ -1,0 +1,21 @@
+{
+  "text.autoconfig.uraiextension.title": "Paramètres de U.R.A.I Extension",
+
+  "text.autoconfig.uraiextension.category.autoMessage": "Paramètres de messages automatiques",
+  "text.autoconfig.uraiextension.category.llm": "Paramètres de l'IA",
+
+  "text.autoconfig.uraiextension.option.modEnabled": "Mode activée",
+  "text.autoconfig.uraiextension.option.modEnabled.@Tooltip": "Activer/Desactiver le mode entier.",
+
+  "text.autoconfig.uraiextension.option.autoMessageEnabled": "Paramètres de messages automatique serveur",
+  "text.autoconfig.uraiextension.option.autoMessageEnabled.@Tooltip": "Envoie un message specifiée en chat au moment que tu rejoint un serveur.",
+
+  "text.autoconfig.uraiextension.option.autoMessageDelay": "Retard de message automatique (ms)",
+  "text.autoconfig.uraiextension.option.autoMessageDelay.@Tooltip": "Retard en millisecondes avant d'envoyer le message automatique specifiée.",
+
+  "text.autoconfig.uraiextension.option.serverJoinIntroMessage": "Message automatique",
+  "text.autoconfig.uraiextension.option.serverJoinIntroMessage.@Tooltip": "Le message a envoyer quand tu rejoint un serveur.",
+
+  "text.autoconfig.uraiextension.option.selectedProvider": "Fournisseur d'IA",
+  "text.autoconfig.uraiextension.option.selectedProvider.@Tooltip": "Le fournisseur d'IA que vous voulez utiliser (Gemini, Claude, ChatGPT)"
+}

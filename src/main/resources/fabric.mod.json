@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "u_r_a_i_extension",
+  "version": "${version}",
+
+  "name": "U.R.A.I Extension",
+  "description": "U.R.A.I Extension",
+  "authors": [],
+  "contact": {},
+
+  "license": "MIT",
+  "icon": "assets/u_r_a_i_extension/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": ["org.lampyt.urai.extension.client.URAIExtensionClient"],
+    "main": ["org.lampyt.urai.extension.URAIExtension"],
+    "modmenu": ["org.lampyt.urai.extension.config.ModMenuIntegration"]
+  },
+
+  "mixins": [
+    "u_r_a_i_extension.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "cloth-config": ">=21.0.0",
+    "urai": ">=1.0.0"
+  },
+
+  "suggests": {
+    "modmenu": "*"
+  }
+}

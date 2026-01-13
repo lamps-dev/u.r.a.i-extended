@@ -1,0 +1,21 @@
+{
+  "text.autoconfig.uraiextension.title": "U.R.A.I Extension Config",
+
+  "text.autoconfig.uraiextension.category.autoMessage": "Auto Message Settings",
+  "text.autoconfig.uraiextension.category.llm": "LLM Provider Settings",
+
+  "text.autoconfig.uraiextension.option.modEnabled": "Mod Enabled",
+  "text.autoconfig.uraiextension.option.modEnabled.@Tooltip": "Enable/disable the entire mod",
+
+  "text.autoconfig.uraiextension.option.autoMessageEnabled": "Auto Join Message",
+  "text.autoconfig.uraiextension.option.autoMessageEnabled.@Tooltip": "Send a specified message automatically when joining a server",
+
+  "text.autoconfig.uraiextension.option.autoMessageDelay": "Message Delay (ms)",
+  "text.autoconfig.uraiextension.option.autoMessageDelay.@Tooltip": "Delay in milliseconds before sending the join message",
+
+  "text.autoconfig.uraiextension.option.serverJoinIntroMessage": "Join Message",
+  "text.autoconfig.uraiextension.option.serverJoinIntroMessage.@Tooltip": "The message to send when joining a server",
+
+  "text.autoconfig.uraiextension.option.selectedProvider": "AI Provider",
+  "text.autoconfig.uraiextension.option.selectedProvider.@Tooltip": "Select which LLM provider to use (Gemini, Claude, ChatGPT, Ollama)"
+}
