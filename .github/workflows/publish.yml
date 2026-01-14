@@ -24,13 +24,19 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew build --info
 
-      - name: Publish to Modrinth and CurseForge
-        run: ./gradlew modrinth curseforge
+      - name: Publish to Modrinth
+        run: ./gradlew modrinth --info
         env:
           MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+        continue-on-error: false
+
+      - name: Publish to CurseForge
+        run: ./gradlew curseforge --info
+        env:
           CURSEFORGE_TOKEN: ${{ secrets.CURSEFORGE_TOKEN }}
+        continue-on-error: true
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4

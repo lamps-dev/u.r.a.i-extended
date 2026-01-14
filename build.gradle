@@ -114,6 +114,7 @@ modrinth {
     uploadFile = remapJar
     gameVersions = [project.minecraft_version]
     loaders = ["fabric"]
+    changelog = System.getenv("CHANGELOG") ?: "See the full changelog at https://github.com/lamps-dev/u.r.a.i-extended/releases"
     dependencies {
         required.project "fabric-api"
         required.project "cloth-config"
