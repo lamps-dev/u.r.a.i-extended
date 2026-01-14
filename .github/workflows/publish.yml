@@ -14,11 +14,32 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Checkout U.R.A.I fixed
+        uses: actions/checkout@v4
+        with:
+          repository: L33tfx/urai-1.21.11
+          path: urai-fixed
+
       - name: Set up JDK 21
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: 21
+
+      - name: Apply U.R.A.I fixes
+        run: |
+          # Add URL encoding fix to U.R.A.I
+          cd urai-fixed
+          sed -i '10a import java.net.URLEncoder;\nimport java.nio.charset.StandardCharsets;' src/main/java/com/l33tfox/urai/gemini/GeminiApiIntegration.java
+          sed -i 's|String geminiApiEndpoint = String.format("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s", config.geminiModel, config.geminiApiKey);|String encodedApiKey = URLEncoder.encode(config.geminiApiKey, StandardCharsets.UTF_8);\n        String geminiApiEndpoint = String.format("https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s", config.geminiModel, encodedApiKey);|' src/main/java/com/l33tfox/urai/gemini/GeminiApiIntegration.java
+
+      - name: Build U.R.A.I fixed
+        run: |
+          cd urai-fixed
+          chmod +x ./gradlew
+          ./gradlew build
+          mkdir -p ../libs
+          cp build/libs/urai-*.jar ../libs/
 
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
