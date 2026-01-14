@@ -4,9 +4,13 @@
   "version": "${version}",
 
   "name": "U.R.A.I Extension",
-  "description": "U.R.A.I Extension",
-  "authors": [],
-  "contact": {},
+  "description": "Quality-of-life extension for U.R.A.I with auto-welcome messages, network fixes, and bundled fixed U.R.A.I mod. Configure via Mod Menu.",
+  "authors": ["lamps-dev"],
+  "contact": {
+    "homepage": "https://github.com/lamps-dev/u.r.a.i-extended",
+    "sources": "https://github.com/lamps-dev/u.r.a.i-extended",
+    "issues": "https://github.com/lamps-dev/u.r.a.i-extended/issues"
+  },
 
   "license": "MIT",
   "icon": "assets/u_r_a_i_extension/icon.png",
