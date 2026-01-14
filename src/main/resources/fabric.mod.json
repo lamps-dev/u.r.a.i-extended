@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "U.R.A.I Extension",
-  "description": "Quality-of-life extension for U.R.A.I with auto-welcome messages, network fixes, and bundled fixed U.R.A.I mod. Configure via Mod Menu.",
+  "description": "Quality-of-life extension for U.R.A.I with auto-welcome messages and network fixes. Includes fixed U.R.A.I. bundled inside (Jar-in-Jar) with URL encoding support. Configure via Mod Menu.",
   "authors": ["lamps-dev"],
   "contact": {
     "homepage": "https://modrinth.com/mod/urai-extended",
@@ -31,8 +31,7 @@
     "fabric-api": "*",
     "minecraft": "${minecraft_version}",
     "java": ">=21",
-    "cloth-config": ">=21.0.0",
-    "urai": ">=1.0.0"
+    "cloth-config": ">=21.0.0"
   },
 
   "suggests": {

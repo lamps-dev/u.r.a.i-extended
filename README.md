@@ -43,10 +43,12 @@ Hey! I'm your AI assistant. Start messages with "Hey Gemini" to chat. Rate limit
 
 ## What's Bundled?
 
-This extension uses Fabric's Jar-in-Jar feature to bundle a **fixed version** of U.R.A.I (v1.0.1) that includes:
+This extension uses Fabric's Jar-in-Jar feature to bundle **U.R.A.I Fixed (v1.0.2-fixed)** that includes:
 
 - **URL-encoded API keys**: Fixes "Illegal character in query" errors when API keys contain spaces or special characters
+- **All original U.R.A.I features** preserved
 - No separate installation needed - users only install this extension
+- Automatic updates when you update the extension
 
 ## Building from Source
 

@@ -15,6 +15,7 @@ base {
 
 
 repositories {
+    mavenLocal()
     maven { url = "https://maven.terraformersmc.com/releases/" }
     maven {
         name = "Modrinth"
@@ -35,9 +36,9 @@ dependencies {
     modImplementation "com.terraformersmc:modmenu:17.0.0-beta.2"
     modImplementation "maven.modrinth:cloth-config:21.11.153+fabric"
 
-    // U.R.A.I is required at runtime - users must install it separately
-    // (We compile against it here for development)
-    modImplementation files("libs/urai-1.0.1.jar")
+    // U.R.A.I Fixed is bundled with this mod (Jar-in-Jar)
+    modImplementation "org.lampyt:urai-fixed:1.0.2-fixed"
+    include "org.lampyt:urai-fixed:1.0.2-fixed"
 
     modImplementation "eu.pb4:placeholder-api:2.8.1+1.21.10"
     modApi("me.shedaniel.cloth:basic-math:+")
@@ -117,7 +118,7 @@ modrinth {
     dependencies {
         required.project "fabric-api"
         required.project "cloth-config"
-        required.project "urai"
+        // U.R.A.I Fixed is bundled with this mod (Jar-in-Jar), no separate download needed
     }
 }
 
